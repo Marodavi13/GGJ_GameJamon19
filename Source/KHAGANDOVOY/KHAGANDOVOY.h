@@ -28,5 +28,15 @@ enum class EDirectionMovement : uint8 {
 	UPLEFT
 };
 
+UENUM(BlueprintType)
+enum class EFoodTruck : uint8 {
+	NONE,
+	KEBAP,
+	PIZZA,
+	BURGUER,
+	NACHOS,
+	FRIES
+};
+
 
 DECLARE_LOG_CATEGORY_EXTERN(LogKHAGANDOVOY, Log, All);
