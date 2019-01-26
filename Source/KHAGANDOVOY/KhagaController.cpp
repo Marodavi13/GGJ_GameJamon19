@@ -7,7 +7,7 @@ AKhagaController::AKhagaController() {}
 void AKhagaController::BeginPlayingState()
 {
 	Super::BeginPlayingState();
-	SetState(EState::STANDARD);
+	SetState(EState::LOOKINGFORTARGET);
 }
 
 void AKhagaController::Tick(float DeltaSeconds)
@@ -24,13 +24,13 @@ void AKhagaController::SetState(EState State)
 	OnStateChanged.Broadcast(CurrentState);
 	switch(State)
 	{
-	case EState::STANDARD:
+	case EState::LOOKINGFORTARGET:
 		this->InputComponent->BindAxis("MoveForward", this, &AKhagaController::MoveForward);
 		this->InputComponent->BindAxis("MoveRight", this, &AKhagaController::MoveRight);
 		this->InputComponent->BindAction("Interact", EInputEvent::IE_Released, this, &AKhagaController::Interact);
 		this->InputComponent->BindAction("Fart", EInputEvent::IE_Released, this, &AKhagaController::Fart);
 		break;
-	case EState::SHITTING:
+	case EState::HOMERUN:
 		this->InputComponent->BindAxis("MoveForward", this, &AKhagaController::MoveForwardShit);
 		this->InputComponent->BindAxis("MoveRight", this, &AKhagaController::MoveRightShit);
 		break;
