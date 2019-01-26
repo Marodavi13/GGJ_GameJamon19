@@ -7,7 +7,7 @@ AKhagaController::AKhagaController() {}
 void AKhagaController::BeginPlayingState()
 {
 	Super::BeginPlayingState();
-	SetState(EState::LOOKINGFORTARGET);
+	SetState(EState::NONE);
 }
 
 void AKhagaController::Tick(float DeltaSeconds)
