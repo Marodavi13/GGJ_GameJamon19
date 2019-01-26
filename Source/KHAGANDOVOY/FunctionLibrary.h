@@ -16,8 +16,8 @@ class KHAGANDOVOY_API UFunctionLibrary : public UBlueprintFunctionLibrary
 	GENERATED_BODY()
 public:
 	UFUNCTION(BlueprintCallable)
-		static EDirectionMovement SetDirection(FVector2D NormalizedVelocity);
+		static EDirectionMovement SetDirection(FVector2D Velocity);
 protected:
-	static float FindDeltaAngle(float A, float B);
+	//static float FindDeltaAngle(float A, float B);
 };
 
