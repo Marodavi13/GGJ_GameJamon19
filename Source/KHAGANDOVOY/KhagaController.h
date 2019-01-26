@@ -14,7 +14,9 @@
 UENUM(BlueprintType)
 enum class EState : uint8 {
 	NONE,
-	STOP,					
+	STUN,
+	STOPANDEAT,
+	STOPANDSHIT,
 	LOOKINGFORTARGET,				
 	HOMERUN
 };
