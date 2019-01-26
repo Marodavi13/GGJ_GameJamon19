@@ -13,12 +13,14 @@
 
 UENUM(BlueprintType)
 enum class EState : uint8 {
+	NONE,
 	STOP,					
 	LOOKINGFORTARGET,				
 	HOMERUN
 };
 
-DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnStateChanged, EState, State);
+
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnStateChanged, EState, StateChanged);
 
 
 UCLASS()
@@ -49,7 +51,7 @@ public:
 		void Fart();
 	UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
 		void Interact();
-
+	UPROPERTY(BlueprintAssignable)
 	FOnStateChanged OnStateChanged;
 
 
