@@ -13,9 +13,9 @@
 
 UENUM(BlueprintType)
 enum class EState : uint8 {
-	NONE,					//Disabled
-	STANDARD,				//Standard movement
-	SHITTING
+	STOP,					
+	LOOKINGFORTARGET,				
+	HOMERUN
 };
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnStateChanged, EState, State);
