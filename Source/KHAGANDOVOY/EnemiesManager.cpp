@@ -34,6 +34,8 @@ void AEnemiesManager::BeginPlay()
 		case ETargetPoint::UFO:
 			UFOPoints.AddUnique(KP);
 			break;
+		case ETargetPoint::FORTASEC:
+			FortasecPoints.AddUnique(KP);
 		default: break;
 		}
 	}
