@@ -57,5 +57,8 @@ public:
 		TArray<AKhagarPoint*> UFOPoints;
 	UPROPERTY(BlueprintReadOnly)
 		TArray<AKhagarPoint*> BarrierPoints;
+	UPROPERTY(BlueprintReadOnly)
+		TArray<AKhagarPoint*> FortasecPoints;
+
 
 };
