@@ -13,8 +13,8 @@ void AKhagaController::BeginPlayingState()
 void AKhagaController::Tick(float DeltaSeconds)
 {
 	Super::Tick(DeltaSeconds);
-	const UEnum* EnumPtr = FindObject<UEnum>(ANY_PACKAGE, TEXT("EState"), true);
-	Print("State: " + EnumPtr->GetNameStringByIndex(static_cast<int32>(CurrentState)), DeltaSeconds, BLUE);
+	//const UEnum* EnumPtr = FindObject<UEnum>(ANY_PACKAGE, TEXT("EState"), true);
+	//Print("State: " + EnumPtr->GetNameStringByIndex(static_cast<int32>(CurrentState)), DeltaSeconds, BLUE);
 }
 
 void AKhagaController::SetState(EState State)
