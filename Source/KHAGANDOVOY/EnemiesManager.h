@@ -46,8 +46,7 @@ public:
 		FEnemyData FortasecData;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		FEnemyData DogData;
-	UPROPERTY(BlueprintReadOnly)
-		uint8	NumberOfRounds;
+
 
 	UPROPERTY(BlueprintReadOnly)
 		TArray<AKhagarPoint*> TrunkPoints;
