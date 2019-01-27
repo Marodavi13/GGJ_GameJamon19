@@ -13,7 +13,8 @@ enum class ETargetPoint : uint8 {
 	TRUNK,
 	BARRIER,
 	UFO,
-	DOG
+	DOG,
+	FORTASEC
 };
 
 
